@@ -8,12 +8,12 @@ const menus = [
     key: '/home'
   },
   {
-    title: '基本组件',
+    title: '项目',
     icon: 'laptop',
-    key: '/home/general',
+    key: '/home/project',
     subs: [
-      {key: '/home/general/button', title: '按钮', icon: '',},
-      {key: '/home/general/icon', title: '图标', icon: '',},
+      {key: '/home/project/button', title: '按钮', icon: '',},
+      {key: '/home/project/icon', title: '图标', icon: '',},
     ]
   },
   {

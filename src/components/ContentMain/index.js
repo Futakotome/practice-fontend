@@ -10,7 +10,7 @@ const ButtonDemo = LoadableComponent(() => import('../../routes/Project/ButtonDe
 const IconDemo = LoadableComponent(() => import('../../routes/Project/IconDemo/index'))
 
 //班级
-const DropdownDemo = LoadableComponent(() => import('../../routes/Class/DropdownDemo/index'))
+const ClassInsert = LoadableComponent(() => import('../../routes/Class/InsertClass/index'))
 const MenuDemo = LoadableComponent(() => import('../../routes/Class/MenuDemo/index'))
 const StepsDemo = LoadableComponent(() => import('../../routes/Class/StepsDemo/index'))
 
@@ -54,7 +54,7 @@ class ContentMain extends React.Component {
                     <PrivateRoute exact path='/home/project/button' component={ButtonDemo}/>
                     <PrivateRoute exact path='/home/project/icon' component={IconDemo}/>
 
-                    <PrivateRoute exact path='/home/classes/dropdown' component={DropdownDemo}/>
+                    <PrivateRoute exact path='/home/classes/insert' component={ClassInsert}/>
                     <PrivateRoute exact path='/home/classes/menu' component={MenuDemo}/>
                     <PrivateRoute exact path='/home/classes/steps' component={StepsDemo}/>
 

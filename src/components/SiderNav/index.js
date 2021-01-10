@@ -21,7 +21,7 @@ const menus = [
     icon: 'bars',
     key: '/home/classes',
     subs: [
-      {key: '/home/classes/dropdown', title: '下拉菜单', icon: ''},
+      {key: '/home/classes/insert', title: '新增', icon: ''},
       {key: '/home/classes/menu', title: '导航菜单', icon: ''},
       {key: '/home/classes/steps', title: '步骤条', icon: ''},
     ]

@@ -17,13 +17,13 @@ const menus = [
     ]
   },
   {
-    title: '导航组件',
+    title: '班级',
     icon: 'bars',
-    key: '/home/navigation',
+    key: '/home/classes',
     subs: [
-      {key: '/home/navigation/dropdown', title: '下拉菜单', icon: ''},
-      {key: '/home/navigation/menu', title: '导航菜单', icon: ''},
-      {key: '/home/navigation/steps', title: '步骤条', icon: ''},
+      {key: '/home/classes/dropdown', title: '下拉菜单', icon: ''},
+      {key: '/home/classes/menu', title: '导航菜单', icon: ''},
+      {key: '/home/classes/steps', title: '步骤条', icon: ''},
     ]
   },
   {

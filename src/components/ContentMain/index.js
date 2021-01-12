@@ -11,7 +11,7 @@ const IconDemo = LoadableComponent(() => import('../../routes/Project/IconDemo/i
 
 //班级
 const ClassInsert = LoadableComponent(() => import('../../routes/Class/InsertClass/index'))
-const MenuDemo = LoadableComponent(() => import('../../routes/Class/MenuDemo/index'))
+const ClassQuery = LoadableComponent(() => import('../../routes/Class/QueryClass/index'))
 const StepsDemo = LoadableComponent(() => import('../../routes/Class/StepsDemo/index'))
 
 //输入组件Demo
@@ -55,7 +55,7 @@ class ContentMain extends React.Component {
                     <PrivateRoute exact path='/home/project/icon' component={IconDemo}/>
 
                     <PrivateRoute exact path='/home/classes/insert' component={ClassInsert}/>
-                    <PrivateRoute exact path='/home/classes/menu' component={MenuDemo}/>
+                    <PrivateRoute exact path='/home/classes/query' component={ClassQuery}/>
                     <PrivateRoute exact path='/home/classes/steps' component={StepsDemo}/>
 
                     <PrivateRoute exact path='/home/entry/form/basic-form' component={FormDemo1}/>

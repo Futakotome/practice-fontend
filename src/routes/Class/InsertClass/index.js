@@ -5,17 +5,6 @@ import TypingCard from '../../../components/TypingCard'
 
 
 class InsertClass extends React.Component {
-    componentDidMount() {
-        fetch("http://localhost:8082/pratice/v1/classes/class/99c0d068-2617-4aab-8006-ddb9729ec7a0", {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json;charset=UTF-8'
-            }
-        }).then(res => res.json())
-            .then((data) => {
-                console.log(data)
-            })
-    }
 
     handleMenuClick(e) {
         message.info(`Click on menu ${e.key} item.`)

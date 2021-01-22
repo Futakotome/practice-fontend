@@ -1,5 +1,5 @@
 import appStore from './appStore'
-import stepFormStore from '../routes/Entry/FormDemo/store'
+import stepFormStore from '../routes/Teacher/FormDemo/store'
 
 const store = {
   appStore,

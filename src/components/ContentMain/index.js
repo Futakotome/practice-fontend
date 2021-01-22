@@ -14,10 +14,10 @@ const ClassInsert = LoadableComponent(() => import('../../routes/Class/InsertCla
 const ClassQuery = LoadableComponent(() => import('../../routes/Class/QueryClass/index'))
 const StepsDemo = LoadableComponent(() => import('../../routes/Class/StepsDemo/index'))
 
-//输入组件Demo
-const FormDemo1 = LoadableComponent(() => import('../../routes/Entry/FormDemo/FormDemo1'))
-const FormDemo2 = LoadableComponent(() => import('../../routes/Entry/FormDemo/FormDemo2'))
-const UploadDemo = LoadableComponent(() => import('../../routes/Entry/UploadDemo/index'))
+//师资库
+const FormDemo1 = LoadableComponent(() => import('../../routes/Teacher/FormDemo/FormDemo1'))
+const FormDemo2 = LoadableComponent(() => import('../../routes/Teacher/FormDemo/FormDemo2'))
+const UploadDemo = LoadableComponent(() => import('../../routes/Teacher/UploadDemo/index'))
 
 //显示组件Demo
 const CarouselDemo = LoadableComponent(() => import('../../routes/Display/CarouselDemo/index'))
@@ -58,9 +58,9 @@ class ContentMain extends React.Component {
                     <PrivateRoute exact path='/home/classes/query' component={ClassQuery}/>
                     <PrivateRoute exact path='/home/classes/steps' component={StepsDemo}/>
 
-                    <PrivateRoute exact path='/home/entry/form/basic-form' component={FormDemo1}/>
-                    <PrivateRoute exact path='/home/entry/form/step-form' component={FormDemo2}/>
-                    <PrivateRoute exact path='/home/entry/upload' component={UploadDemo}/>
+                    <PrivateRoute exact path='/home/teacher/form/basic-form' component={FormDemo1}/>
+                    <PrivateRoute exact path='/home/teacher/form/step-form' component={FormDemo2}/>
+                    <PrivateRoute exact path='/home/teacher/upload' component={UploadDemo}/>
 
                     <PrivateRoute exact path='/home/display/carousel' component={CarouselDemo}/>
                     <PrivateRoute exact path='/home/display/collapse' component={CollapseDemo}/>

@@ -27,20 +27,20 @@ const menus = [
         ]
     },
     {
-        title: '输入组件',
+        title: '师资库',
         icon: 'edit',
-        key: '/home/entry',
+        key: '/home/teacher',
         subs: [
             {
-                key: '/home/entry/form',
+                key: '/home/teacher/form',
                 title: '表单',
                 icon: '',
                 subs: [
-                    {key: '/home/entry/form/basic-form', title: '基础表单', icon: ''},
-                    {key: '/home/entry/form/step-form', title: '分步表单', icon: ''}
+                    {key: '/home/teacher/form/basic-form', title: '基础表单', icon: ''},
+                    {key: '/home/teacher/form/step-form', title: '分步表单', icon: ''}
                 ]
             },
-            {key: '/home/entry/upload', title: '上传', icon: ''},
+            {key: '/home/teacher/upload', title: '上传', icon: ''},
         ]
     },
     {

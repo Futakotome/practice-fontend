@@ -12,8 +12,8 @@ const menus = [
         icon: 'laptop',
         key: '/home/project',
         subs: [
-            {key: '/home/project/button', title: '按钮', icon: '',},
-            {key: '/home/project/icon', title: '图标', icon: '',},
+            {key: '/home/project/client', title: '客户', icon: '',},
+            {key: '/home/project/summary', title: '汇总', icon: '',},
         ]
     },
     {

@@ -6,8 +6,8 @@ import PrivateRoute from '../PrivateRoute'
 const Home = LoadableComponent(() => import('../../routes/Home/index'))  //参数一定要是函数，否则不会懒加载，只会代码拆分
 
 //项目
-const ButtonDemo = LoadableComponent(() => import('../../routes/Project/ButtonDemo/index'))
-const IconDemo = LoadableComponent(() => import('../../routes/Project/IconDemo/index'))
+const Client = LoadableComponent(() => import('../../routes/Project/Client/index'))
+const Summary = LoadableComponent(() => import('../../routes/Project/Summary/index'))
 
 //班级
 const ClassInsert = LoadableComponent(() => import('../../routes/Class/InsertClass/index'))
@@ -51,8 +51,8 @@ class ContentMain extends React.Component {
                 <Switch>
                     <PrivateRoute exact path='/home' component={Home}/>
 
-                    <PrivateRoute exact path='/home/project/button' component={ButtonDemo}/>
-                    <PrivateRoute exact path='/home/project/icon' component={IconDemo}/>
+                    <PrivateRoute exact path='/home/project/client' component={Client}/>
+                    <PrivateRoute exact path='/home/project/summary' component={Summary}/>
 
                     <PrivateRoute exact path='/home/classes/insert' component={ClassInsert}/>
                     <PrivateRoute exact path='/home/classes/query' component={ClassQuery}/>

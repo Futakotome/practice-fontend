@@ -4,7 +4,7 @@ import CustomBreadcrumb from "../../../components/CustomBreadcrumb/index";
 
 class QueryClass extends React.Component {
 
-    classUrl = new URL("http://localhost:8082/pratice/v1/classes/class")
+    classUrl = new URL("http://localhost:8089/pratice/v1/classes/class")
 
     componentDidMount() {
         this.fetch()

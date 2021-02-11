@@ -7,6 +7,8 @@ import Search from "antd/lib/input/Search";
 @Form.create()
 class Client extends React.Component {
 
+    projectClientUrl = new URL("http://localhost:8089/pratice/project/client")
+
     state = {
         addClientModalVisible: false,
     }
@@ -16,7 +18,19 @@ class Client extends React.Component {
             if (errors) {
                 message.warning("请填写正确的客户信息.")
             } else {
-                alert(values.clientName)
+                fetch(this.projectClientUrl, {
+                    method: "post",
+                    headers: {
+                        'Content-Type': 'application/json;charset=UTF-8'
+                    },
+                    body: JSON.stringify(values.clientName)
+                }).then(res => {
+                    if (res.status === 200) {
+                        return res.json()
+                    }
+                }).then((data) => {
+                    message.success(data.name + " 保存成功!")
+                })
             }
         }))
     }
